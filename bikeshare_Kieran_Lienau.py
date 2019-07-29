@@ -15,7 +15,6 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 pp = pprint.PrettyPrinter(indent=4)
 
 CITY_DATA = { 'c': 'chicago.csv',
@@ -178,7 +177,7 @@ Data for the given filters (city, month, day) is loaded.
 
     # set the filter to weekday as chosen
         # build a new data frame
-        
+
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
 
@@ -198,7 +197,7 @@ def time_stats(df):
 
     month_group = df.groupby('month')['Start Time'].count()
     print("Most common month (number of starts):\n\n" + calendar.month_name[int(month_group.sort_values(ascending = True).index[-1])])
-    
+
     most_common_weekday = df['day_of_week'].mode()[0]
     print('\n\nMost common day of the week:\n')
     print(most_common_weekday)
@@ -219,7 +218,7 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-   
+
     most_common_start_station=df['Start Station'].value_counts()[df['Start Station'].value_counts() == df['Start Station'].value_counts().max()]
     print('Most common start station:\n\n', most_common_start_station)
 
@@ -228,8 +227,8 @@ def station_stats(df):
     print('\n\nMost common end station:\n\n', most_common_end_station)
 
     # display most frequent combination of start station and end station
-    
-    most_common_combination=df.groupby(['Start Station', 'End Station']).size().nlargest(3).sort_values(ascending=False) 
+
+    most_common_combination=df.groupby(['Start Station', 'End Station']).size().nlargest(3).sort_values(ascending=False)
     print('\n\nMost common three combinations of start station and end station:\n\n', most_common_combination)
 
 def trip_duration_stats(df):
@@ -255,14 +254,14 @@ def user_stats(df):
     start_time = time.time()
 
     # Display counts of user types
-    
-    user_type = df.groupby('User Type')['User Type'].count().sort_values(ascending=False) 
+
+    user_type = df.groupby('User Type')['User Type'].count().sort_values(ascending=False)
     print('\n',user_type)
 
     # Display counts of gender
     try:
       print("\n\n")
-      gender_type = df.groupby('Gender')['Gender'].count().sort_values(ascending=False) 
+      gender_type = df.groupby('Gender')['Gender'].count().sort_values(ascending=False)
       print(gender_type)
       print('\n\n')
     except KeyError:
@@ -302,7 +301,7 @@ def user_stats(df):
     except:
       print("\n\nThere was an error while looking for your desired information.")
 
-    try:   
+    try:
       most_common_birth_year=df['Birth Year'].value_counts().idxmax()
       print('\n\nMost common birth year:\n')
       print('{:04.0f}'.format(most_common_birth_year))
@@ -326,7 +325,7 @@ def show_dataframe(df):
             break
 
 def main():
-    
+
     while True:
         city = choose_city()
         month = choose_month()
