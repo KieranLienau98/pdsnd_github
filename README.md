@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+June 17, 2019
 
 ### Project Title
-Replace the Project Title
+Udacity Python Project
 
 ### Description
-Describe what your project is about and what it does
+The project is about using Python to analyse data from a bikeshare-service
 
 ### Files used
-Include the files used
+bikeshare_Kieran_Lienau.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
+https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column
+https://www.reddit.com/r/learnpython/comments/7s99rk/pandas_sort_by_most_frequent_value_combinations/
+https://www.marsja.se/python-pandas-groupby-tutorial-examples/
+https://pyformat.info/
+https://wiki.python.org/
+https://py-tutorial-de.readthedocs.io/de/python-3.3/stdlib2.html
+https://www.w3schools.com/python/
+https://stackoverflow.com/questions/9758959/sort-a-list-of-numerical-strings-in-ascending-order
