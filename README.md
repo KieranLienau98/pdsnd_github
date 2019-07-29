@@ -6,6 +6,7 @@ Udacity Python Project
 
 ### Description
 The project is about using Python to analyse data from a bikeshare service.
+This is the authors first Python project.
 
 ### Files used
 bikeshare_Kieran_Lienau.py
