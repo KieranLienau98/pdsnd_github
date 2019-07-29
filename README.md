@@ -1,11 +1,11 @@
 ### Date created
-June 17, 2019
+Monday, June 17th, 2019
 
 ### Project Title
 Udacity Python Project
 
 ### Description
-The project is about using Python to analyse data from a bikeshare-service
+The project is about using Python to analyse data from a bikeshare service.
 
 ### Files used
 bikeshare_Kieran_Lienau.py
