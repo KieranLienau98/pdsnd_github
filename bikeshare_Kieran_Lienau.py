@@ -25,7 +25,6 @@ CITY_DATA = { 'c': 'chicago.csv',
               'washington': 'washington.csv'
              }
 
-
 def choose_city():
     """
     Asks user to specify a city to analyse.
